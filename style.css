@@ -1,0 +1,15 @@
+.container{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-content: center
+    
+}
+
+body{
+    background: #ccc;
+}

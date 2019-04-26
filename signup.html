@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+     <link rel="stylesheet" href="style.css" type="text/css"/> 
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-center">Register With Us</h3>
+        <div class="alert" id="msg"></div>
+        <form id="regform">  
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" class="form-control"
+                   id="name" name="name">
+                </div>
+                <div class="form-group">
+                        <label>last Name</label>
+                        <input type="text" class="form-control"
+                         id="lastname" name="lastname">
+                </div>
+                <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control"
+                         id="email" name="email">
+                </div>
+                <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" class="form-control"
+                         id="phonenumber" name="phonenumber">
+                </div>
+                <div class="form-group">
+                        <label>Referal Code</label>
+                        <input type="text" class="form-control"
+                         id="referalcode" name="referalcode">
+                </div>
+                <div>
+                    <h3>How Did You Hear About Us?</h3>
+                    <form action="#" class="form-group"></form>
+                        <p>Click to select</p>
+                    <div class="row">
+                        <div style= "padding: 0px 15px">
+                            <select>
+                                <option>click to select</option>
+                                <option>Event/Conference</option>
+                                <option>Facebook</option>
+                                <option>Instagram</option>
+                                <option>Twitter</option>
+                                <option>Friends/Family(Word of Mouth)</option>
+                                <option>Search Engine (Google, Yahoo etc)</option>
+                                <option>Blog/Article</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="paswsword" name="password">
+                </div>
+                <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-control" id="paswsword2" name="password2">
+                </div>
+                <button type="createaccount" class="btn btn-primary">Create Account</button>
+        </form>
+    </div>
+</body>
+<script>
+    function register(e){
+        e.preventDefault();
+        
+        var firstname = document.getElementById('firstname'), value;
+        var lastname = document.getElementById('lastname'), value;
+        var email = document.getElementById('email'), value;
+        var password = document.getElementById('pasword'), value;
+        var confirmpassword = document.getElementById('confirmpassword'), value;
+        var msg = document.getElementById('msg');
+
+        msg.innerHTML = name+' is registered with email '+ email;
+    }
+    
+    document.getElementById('regForm'), addEventListener('submit', register, false);
+</script>
+</html>
